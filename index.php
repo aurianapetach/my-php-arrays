@@ -54,8 +54,8 @@
       <h2 class="h5 mb-4">The <em><?php echo $franchise; ?></em> heroes have some of the following superpowers:</h2>
       <ul class="list-group pb-4" style="max-width: 20rem;">
         <?php
-          foreach ($powers as $power => $year) {
-              echo '<li class="list-group-item justify-content-between"><em>'.$movie.'</em> '.$year.'</li>';
+          foreach ($powers as $power => $superhero) {
+              echo '<li class="list-group-item justify-content-between"><em>'.$superhero.'</em> '.$power.'</li>';
           }
           // Let's unset $movie so it can be used again later
           unset($superhero);
